@@ -70,6 +70,12 @@ section {
   max-width: 26rem;
 }
 
+.card--theme-cyan {
+  --card-theme-text-color: var(--color-dark-cyan);
+  --card-theme-text-contrast-color: var(--color-white);
+  --card-theme-bg-color: var(--color-dark-cyan);
+}
+
 .card__content {
   padding: 24px;
   display: flex;
@@ -107,11 +113,8 @@ section {
   text-align: center;
   gap: 16px;
   padding-block: 0.75rem;
-}
-
-.button--dark-cyan {
-  color: var(--color-white);
-  background: var(--color-dark-cyan);
+  color: var(--card-theme-text-contrast-color, currentColor);
+  background: var(--card-theme-bg-color);
 }
 
 .button-price-group {
@@ -130,7 +133,7 @@ section {
 }
 
 .price-group__price {
-  color: var(--color-dark-cyan);
+  color: var(--card-theme-text-color, currentColor);
   font-family: var(--font-family-serif);
   font-size: 2rem;
 }
