@@ -1,0 +1,140 @@
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-gray-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-family-serif: "Fraunces", serif;
+  --font-family-sans-serif: "Montserrat", sans-serif;
+  --font-size-body: 0.875rem;
+}
+
+body {
+  font-size: var(--font-size-body);
+  font-family: var(--font-family-sans-serif);
+  background: var(--color-cream);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding-block: 32px;
+}
+
+.wrapper {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+.perfume {
+  flex: 1;
+}
+
+.perfume .wrapper {
+  min-height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+/* Header */
+
+.header__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header__subtitle {
+  order: -1;
+  color: var(--color-dark-gray-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+/* Card */
+
+.card {
+  --border-radius: 6px;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  max-width: 26rem;
+}
+
+.card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__body {
+  color: var(--color-dark-gray-blue);
+  margin-top: 0.75rem;
+}
+
+.card__image-wrapper {
+  order: -1;
+}
+
+.card__image-wrapper,
+.card__image {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card__image {
+  width: 100%;
+}
+
+/* Button */
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding-block: 0.75rem;
+}
+
+.button--dark-cyan {
+  color: var(--color-white);
+  background: var(--color-dark-cyan);
+}
+
+.button-price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0.75rem;
+}
+
+/* Price Group */
+
+.price-group {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.price-group__price {
+  color: var(--color-dark-cyan);
+  font-family: var(--font-family-serif);
+  font-size: 2rem;
+}
+
+.price-group__discount {
+  color: var(--color-dark-gray-blue);
+}
