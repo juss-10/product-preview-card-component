@@ -103,7 +103,7 @@ p {
 
 .card__picture {
   order: -1;
-  max-height: 250px;
+  max-height: 240px;
 }
 
 .card__picture,
