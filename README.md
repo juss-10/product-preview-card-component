@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- [Live version](https://juss-10.github.io/product-review-card-component/)
+- [Live version](https://juss-10.github.io/product-preview-card-component/)
 
 ## Built with
 
